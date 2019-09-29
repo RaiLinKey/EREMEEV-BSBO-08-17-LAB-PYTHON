@@ -1,28 +1,23 @@
 a = input('Введите трёхзначное число: ')
 b = list(a)
-x1 = float(b[0])
-x2 = float(b[1])
-x3 = float(b[2])
 
-v_max = x1
-v_min = x1
-if v_max < x2:
-    v_max = x2
-if v_max < x3:
-    v_max = x3
-if v_min > x2:
-    v_min = x2
-if v_min > x3:
-    v_min = x3
-
-print(v_max, v_min)
+v_max = float(b[0])
+v_min = float(b[0])
+if v_max < float(b[1]):
+    v_max = float(b[1])
+if v_max < float(b[2]):
+    v_max = float(b[2])
+if v_min > float(b[1]):
+    v_min = float(b[1])
+if v_min > float(b[2]):
+    v_min = float(b[2])
 
 half_sum = (v_min + v_max) / 2
-if half_sum == x1:
+if half_sum == float(b[0]):
     print('Вы ввели красивое число')
-elif half_sum == x2:
+elif half_sum == float(b[1]):
     print('Вы ввели красивое число')
-elif half_sum == x3:
+elif half_sum == float(b[2]):
     print('Вы ввели красивое число')
 else:
     print('Увы, число не красивое')
