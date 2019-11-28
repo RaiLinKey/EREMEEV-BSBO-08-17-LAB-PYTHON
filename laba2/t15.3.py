@@ -1,5 +1,4 @@
 string = input('Введите строку: ')
-# Делаем список из неповторяющихся элементов, заодно переводим все буквы в нижний регистр
 sbs = list(set(string.lower()))
 l_string = len(string)
 l_sbs = len(sbs)
